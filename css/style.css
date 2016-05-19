@@ -464,7 +464,7 @@ header h2:before {
 .block-preim .black-b{
     font-weight: 700;
 }
-/*============================ news ===========================*/
+/*======== news =========*/
 .block-news{
     position: relative;
 }
@@ -482,10 +482,6 @@ header h2:before {
     line-height: 25px;
     text-align: left;
 }
-.news-img img{
-    max-width:454px;
-}
-
 
 
 /*===== footer =====*/
@@ -598,7 +594,7 @@ footer img {
 .modal .garant{
     color: #99ccff;
     padding-left: 50px; 
-    background: url(../img/lock.png) no-repeat  20px center;
+    background: url(../img/icon_lock.png) no-repeat  20px center;
     font-size: 14px;
 }
 .modal .modal-footer .btn{
