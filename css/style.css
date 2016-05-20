@@ -423,6 +423,9 @@ header h2:before {
   background: url(../img/icon_lock.png) no-repeat 10px 25px;
 }
 /*============================= preim =========================*/
+.preimyshestva {
+  padding-bottom: 60px;
+}
 .block_warner{
     border-radius: 2px;
     border-width: 1px;
@@ -438,7 +441,7 @@ header h2:before {
     font-weight: 400;
     line-height: 30px;
     text-align: left;
-    transform: scaleY(1.0005);
+
     margin-left: 60px;
     max-width: 920px;
 }
@@ -472,24 +475,72 @@ header h2:before {
     font-weight: 700;
 }
 /*======== news =========*/
+.news {
+  background-color: #fafafa;
+  padding-bottom: 80px;
+}
+.news h2 {
+  padding-bottom: 20px;
+}
 .block-news{
-    position: relative;
+  position: relative;
+  width: 456px;
+  margin: 30px auto;
+}
+.news-date {
+  position: absolute;
+  padding: 8px 0;
+  top: 155px;
+  right: 35px;
+  width: 80px;
+  height: 60px;
+  background-color:  rgba(0, 102, 153, 0.9);
+  text-align: center;
+}
+.news-date span{
+  color: #fff;
+  font-weight: 300;
+  line-height: 40px;
+}
+.date1 {	
+  font-size: 30px;
+}
+.date2 {
+  font-size: 16px;
 }
 .block-news .news-content h4{
-    color:  #006699;
+  padding-top: 34px;
+    color:  #069;
     font-size: 18px;
     font-weight: 600;
     line-height: 27px;
-    text-align: left;
 }
 .block-news .news-content p{
-    color:  #999999;
+    color:  #999;
     font-size: 14px;
     font-weight: 300;
     line-height: 25px;
-    text-align: left;
 }
-
+.archive-news a {
+  display: block;
+  margin: 30px auto 0;
+  border-radius: 1px;
+  background-color: #f60;
+  width: 190px;
+  height: 40px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.archive-news a:hover {
+  text-decoration: none;
+  background-color: #ff9600;
+  color: #fff;
+  border-color: #ff9600;
+}
 
 /*===== footer =====*/
 footer {
