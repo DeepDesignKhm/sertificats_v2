@@ -344,10 +344,49 @@ header h2:before {
 }
 /*===== map =====*/
 .map {
-  position: relative;
+    position: relative;    
+}
+.google-map{
+    z-index: 1;
 }
 .map-contact {
-  position: absolute;
+    position: absolute;
+    z-index: 99999999999999;
+    top: calc(50% - 139px);
+    left: calc(50% - 155px);
+    background-color:  #ffffff;
+    box-shadow: 12px 21px 43px 0px rgba(114, 79, 75, 0.18);
+    width: 310px;
+    height: 278px;
+    padding: 20px 35px;
+}
+.map-contact h5{
+    color:  #006699;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+}
+.map-contact p{
+    color:  #666666;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 28px;
+}
+.map-contact a{
+    background-color:  #ff6600;
+    width: 171px;
+    height: 35px;
+    display: block;
+    color:  #ffffff;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 35px;
+    text-align: center;
+}
+.map-contact a:hover{
+    text-decoration: none;
+    background-color: #ff9600;
+    border-color: #ff9600;
 }
 /*===== question =====*/
 .question {
@@ -541,7 +580,6 @@ header h2:before {
   color: #fff;
   border-color: #ff9600;
 }
-
 /*===== footer =====*/
 footer {
   padding: 40px 0;
