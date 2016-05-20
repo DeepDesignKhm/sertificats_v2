@@ -342,6 +342,13 @@ header h2:before {
     background-color:  #ff9600;
     box-shadow: 1px 2px 0px 0px #de8800;
 }
+/*===== map =====*/
+.map {
+  position: relative;
+}
+.map-contact {
+  position: absolute;
+}
 /*===== question =====*/
 .question {
   padding: 53px 0 48px;
