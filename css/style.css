@@ -137,13 +137,34 @@ header h2:before {
   color: #f60;
   font-weight: 600;
 }
-/*=======================slider============================*/
+/*==========slider=========*/
 .carousel-caption{
     left:50%;
     right: 1%;
-    bottom: 95px;
+    bottom: 45px;
     z-index: 0;
     text-shadow: none;
+}
+.carousel-indicators .active {
+  background-color: #f60;
+  margin: 0 4px;
+  width: 13px;
+  height: 13px;
+}
+.carousel-indicators li {
+  margin: 0 4px;
+  background-color: #151515;
+  width: 13px;
+  height: 13px;
+}
+.carousel-control .glyphicon-menu-left, .carousel-control .glyphicon-menu-right {
+  position: absolute;
+  top: 50%;
+  font-size: 40px;
+}
+.carousel-control:hover, 
+.carousel-control:focus {
+  color: #f60;
 }
 .main-slider h1{
     color:  #333333;
@@ -162,15 +183,14 @@ header h2:before {
 }
 .main-slider ul>li{
     color:  #ff6600;
-    font-size: 32px;/* Приближение из-за подстановки шрифтов */
+    font-size: 32px;
     font-weight: 700;
-    line-height: 41px;/* Приближение из-за подстановки шрифтов */
+    line-height: 41px;
     text-align: justify;
     text-transform: uppercase;
 }
 .da-ras{
-    background-color:  #ff6600;
-    box-shadow: 1px 2px 0px 0px #db5800;
+    background-color: #f60;
     width: 270px;
     height: 40px;
     display:block;
@@ -179,23 +199,29 @@ header h2:before {
     font-weight: 300;
     line-height: 35px;
     text-align: center;
-    transform: scaleY(1.0002);
     float:left;
 }
+.da-ras:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #ff9600;
+}
 .net-ras{
-    background-color:  #919191;
-    box-shadow: 1px 2px 0px 0px #7f7f7f;
+    background-color: #919191;
     width: 270px;
     height: 40px;
-    color:  #ffffff;
+    color: #fff;
     display:block;
     font-size: 15px;
     font-weight: 300;
     line-height: 35px;
     text-align: center;
-    transform: scaleY(1.0002);
     float:left;
     margin-left: 29px;
+}
+.net-ras:hover {
+  color: #fff;
+  text-decoration: none;
 }
 /*=======================about============================*/
 .about-company {
@@ -301,7 +327,7 @@ header h2:before {
     text-align: center;
     box-shadow: 7px 13px 27px 0px rgba(91, 76, 107, 0.13);
     height: 470px;
-    margin-top: 25px auto;
+    margin: 25px auto;
     width: 312px;
     margin-bottom: 40px;
     z-index: 10;
@@ -431,7 +457,7 @@ header h2:before {
     border-width: 1px;
     border-color:  #ff6600;
     border-style: solid;
-    height: 95px;
+    min-height: 95px;
     position: relative;
     padding-top: 15px;
 }
@@ -441,7 +467,6 @@ header h2:before {
     font-weight: 400;
     line-height: 30px;
     text-align: left;
-
     margin-left: 60px;
     max-width: 920px;
 }
@@ -771,7 +796,13 @@ footer img {
   .request .warranty {
     background-position-x: 110px;
   }
- 
+  .footer-left img {
+    display: block;
+    margin: 0 auto;
+  }
+  .footer-left a {
+    text-align: center;
+  }
   .footer-right {
     padding: 0;
   }
@@ -798,11 +829,24 @@ footer img {
   .coppyright {
     text-align: center;
   }
+  .block_warner img {
+    left: 50%;
+    top: -30px;
+    margin-left: -29px;
+  }
+  .block_warner p {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 10px;
+  }
  
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+  .testing h2:before {
+    left: 40px;
+  }
   .question input,
   .request input {
     width: 269px !important;
@@ -811,4 +855,14 @@ footer img {
   .request .container {
     padding: 0 5px;
   }
+  .block_warner p,
+  .block-preim p {
+    text-align: justify;
+  }
+  .block-preim img {
+    float: none;
+    margin: 0 auto;
+    display: block;
+  }
+  
 }
