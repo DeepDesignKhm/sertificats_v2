@@ -52,35 +52,22 @@
       </div>
     </div>
     
-<!--
-    <div class="modal fade" id="popup-thanks" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
+
+
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
             <p class="thanks">Спасибо!</p>
             <p class="thanks-dn">Наши специалист свяжется с Вами в ближайшие несколько минут</p>
           </div>
-        </div>
-      </div>
     </div>
--->
-<div id="overlay">
-    <div class="modal-dialog">
-       <div class="modal-content">
-       <div class="modal-header">
-       <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="document.getElementById('overlay').style.visibility='hidden'">&times;</button>
-
-    <div class="content">
-    <p class="thanks">Спасибо!</p>
-    <p class="thanks-dn">Наши специалист свяжется с Вами в ближайшие несколько минут</p>
-    </div>
-    </div>
-        </div>
-    </div>
+  </div>
 </div>
+
     
-    <div class="modal fade" id="popup_usluga" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="popup_usluga" tabindex="-1" role="dialog" aria-labelledby="usluga" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
          
@@ -89,7 +76,7 @@
             <div class="modal-header-iline">
             <div class="modal-img-head"><img src="img/mini-img.png" alt=""></div>
             <div class="modal-txt-head">
-                <h4 class="modal-title" id="myModalLabel"><span>Заказать услугу</span></h4>
+                <h4 class="modal-title" id="usluga"><span>Заказать услугу</span></h4>
                 <p class="modal_popup_usluga">по оформлению свидетельств о государственной регистрации (СГР)</p>
             </div>
             </div>
@@ -348,7 +335,8 @@
                         <div class="form-group">
                             <input type="phone" class="form-control" placeholder="Введите Ваш телефон">
                         </div>
-                        <button type="submit" class="btn btn-default">Отправить заявку</button>
+
+                           <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Отправить заявку</button>
                             <p class="warranty">Мы гарантируем конфиденциальность Ваших личных данных</p>
                     </form>
               </div>
