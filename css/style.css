@@ -122,7 +122,7 @@ header h2:before {
     text-decoration: underline;
 }
 
-/*===== request ====*/
+/*===== request =====*/
 .request {
   padding: 53px 0 48px;
   background: url(../img/forms-bg.jpg) no-repeat;
@@ -218,7 +218,7 @@ header h2:before {
     text-align: center;
     float:left;
     margin-left: 29px;
-  }
+}
 .net-ras:hover {
   color: #fff;
   text-decoration: none;
@@ -226,7 +226,7 @@ header h2:before {
 /*=======================about============================*/
 .about-company {
     background: url(../img/about-bg.jpg) no-repeat left top;
-    background-size: cover;
+    background-size: contain;
     padding-bottom: 20px;
 }
 .about_text p {
@@ -408,18 +408,18 @@ header h2:before {
     font-weight: 300;
     line-height: 35px;
     text-align: center;
-  }
+}
 .map-contact a:hover{
     text-decoration: none;
     background-color: #ff9600;
     border-color: #ff9600;
-  }
+}
 /*===== question =====*/
 .question {
   padding: 53px 0 48px;
   background: url(../img/uslugi-gb.jpg) no-repeat;
   background-size: cover;
-  }
+}
 .question .container,
 .request .container {
   padding: 0 46px;
@@ -654,7 +654,7 @@ footer img {
   text-decoration: none;
 }
 .coppyright {
-  padding-top: 10px;
+  padding-top: 20px;
   color:  #ccc;
   font-size: 12px;
   font-weight: 300;
@@ -734,7 +734,7 @@ footer img {
 .modal .modal-img-head img{width: 100%; max-width: 163px;}
 .modal .modal-txt-head{width: 66%; display: inline-block; vertical-align: middle; padding-left: 35px}
 .modal .modal_popup_usluga{color: #fff; font-size: 16px; font-weight: 700}
-.modal .img-name{background: rgba(255, 255, 255, 1) url(../img/icon_name_popup.png) no-repeat   center;}
+.modal .img-name{background: rgba(255, 255, 255, 1) url(../img/name.png) no-repeat   center;}
 .modal .img-phone{background: rgba(255, 255, 255, 1) url(../img/tel.png) no-repeat   center;}
 .modal .img-email{background: rgba(255, 255, 255, 1) url(../img/email.png) no-repeat   center;}
 
@@ -770,203 +770,10 @@ footer img {
 }
 /*==========  MODALS  ==========*/
 
-/* ===== ONE PAGE ===== */
-.onePage {
-  background: url(../img/bg_onePage.jpg) no-repeat bottom;
-}
-.breadcrumb {
-  padding: 22px 0;
-  background-color: #fff; 
-}
-.breadcrumb li {
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 40px;
-}
-.breadcrumb > .active {
-  color: #f60;
-}
-.breadcrumb a {
-  color: #999;
-}
-.breadcrumb a:hover {
-  text-decoration: none;
-  color: #f60;
-}
-.onePage h1{
-  padding-left: 17px;
-  margin-top: 0;
-  color: #333;
-  font-size: 35px;
-  font-weight: 700;
-  line-height: 40px;
-  text-align: left;
-  position: relative;
-  padding-bottom: 40px;
-  text-transform: uppercase;
-}
-.onePage h1:before{
-  content: '';
-  position: absolute;
-  top: 9px;
-  left: 3px;
-  background-color: #ff6600;
-  width: 8px;
-  height: 7px;
-  border-radius: 50%;
-}
-.onePage figure {
-  margin: 0;
-  padding-right: 57px;
-  float: left;
-}
-.onePage figcaption{
-  font-size: 13px;
-  font-style: italic;
-  padding: 10px 0 0 5px;
-}
-.onePage h2 {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 28px;
-  margin-top: 0;
-  padding-bottom: 23px; 
-  text-transform: none;
-  text-align: justify;
-}
-.onePage h2:before {
-  display: none;
-}
-.onePage p {
-  padding-bottom: 20px;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 30px;
-  text-align: justify;
-}
-.onePage ul,
-.onePage .numbered_list{
-  padding: 0 0 16px 25px;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 30px;
-  text-align: justify;
-}
-.onePage .numbered_list{
-  padding-left: 33px;
-}
-.onePage ul li,
-.onePage .numbered_list li {
-  padding-left: 10px;
-  color: #f60;
-}
-.onePage ul span,
-.onePage .numbered_list span {
-  color: #333;
-}
-.onePage .important {
-  margin: 0 0 35px 8px;
-  padding: 0 0 0 23px;
-  border-left: 4px solid #f60;
-}
-.onePage .numbered_list {
-  list-style-type: none; 
-  counter-reset: li;
-}
-.onePage .numbered_list li{
-  position:relative;
-  padding: 0;
-}
-.onePage .numbered_list li::before {
-  content: '0' counter(li); 
-  counter-increment: li;
-  position: absolute;
-  top: 0;
-  left: -29px;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 30px;
-}
-.table {
-  margin: 50px 0 70px;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 34px;
-  background-color: #fff;
-}
-.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
-  border-top: none;
-  padding: 8px 0 8px 21px;
-  line-height: 34px;
-}
-.table-striped > tbody > tr:nth-of-type(odd){
-  background-color: #f4f4f4;
-}
-.table tr td:nth-child(2) {
-  border-left: 1px solid #e2e2e2;
-  border-right: 1px solid #e2e2e2;
-}
-.onePage thead{
-  background-color: #434343;
-  color: #fff; 
-  font-weight: 700;
-}
-.onePage blockquote {
-  position: relative;
-  padding: 27px 0px 10px 35px;
-  font-size: 15px;
-  font-style: italic;
-  line-height: 30px;
-  border-left: none;
-}
-.onePage blockquote:before {
-  content: '';
-  position: absolute;
-  width: 29px;
-  height: 20px;
-  top: 0;
-  left: 0;
-  background: url(../img/icon_quotes.png) no-repeat;
-}
-.onePage .archive_news {
-  padding-left: 26px;
-  display: block;
-  margin: 49px auto 77px;
-  border-radius: 1px;
-  width: 190px;
-  height: 40px;
-  color:  #fff;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 40px;
-  text-transform: uppercase;
-  text-align: center;
-  background: #f60 url(../img/icon_archive_arrow.png) no-repeat 17px 16px;
-}
-.onePage .archive_news:hover{
-  text-decoration: none;
-  background-color: #ff9600;
-}
-@media(max-width: 991px){
-  .onePage figure {
-	float: none;
-  }
-  .onePage figure img {
-    margin: 0 auto;
-  }
-}
-@media(max-width: 480px) {
-  .onePage h1{
-    font-size: 20px;
-  }
-}
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1199px) {
-  .about-company {
-    background: #fff;
-  }
   .orangeBorder {
 	left: calc(50% - 475px);
     left: -moz-calc(50% - 475px);
@@ -1086,9 +893,6 @@ footer img {
   .request .container {
     padding: 0 5px;
   }
-  .block-news {
-    width: 100%;
-  }
   .block_warner p,
   .block-preim p {
     text-align: justify;
@@ -1100,29 +904,3 @@ footer img {
   }
   
 }
-
-@media only screen and (max-width : 425px) {
-  .news-date {
-    top: 130px;
-  }
-  .uslugy h2:before {
-    left: 47px;
-  }
-  .preimyshestva h2:before {
-    left: 120px;
-  }
-  .testing h2:before {
-    left: 20px;
-  }
-} 
-@media only screen and (max-width : 375px) {
-  .news-date {
-    top: 100px;
-  }
-} 
-@media only screen and (max-width : 320px) {
-  .news-date {
-    top: 85px;
-    right: 15px;
-  }
-} 
